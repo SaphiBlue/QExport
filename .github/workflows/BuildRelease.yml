@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # Checkout the repository under a subdirectory (repository-name/) to
       # make zipping easier. Note: 'gh' or 'git' commands must be executed
