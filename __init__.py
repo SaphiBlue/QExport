@@ -2,9 +2,11 @@ bl_info = {
     "name": "Quantum Batch Export",
     "description": "Exports internal images with a certain prefix, into a given directory",
     "author": "Saphi",
-    "version": (0, 0, 1),
+    "version": (0, 0, 2),
     "blender": (4, 2, 0),
     "category": "Output",
+    "location": "Output > Quantum Export",
+    "doc_url": "https://github.com/SaphiBlue/QExport"
 }
 
 import bpy
@@ -47,7 +49,7 @@ class QExportGlobalProps(bpy.types.PropertyGroup):
 class QExportPanel(bpy.types.Panel):
 
     bl_label = "Quantum Export"
-    bl_idname = "QExportPanel"
+    bl_idname = "QEXPORT_PT_Panel"
     bl_space_type = 'PROPERTIES'
     bl_region_type = 'WINDOW'
     bl_context = "output"
