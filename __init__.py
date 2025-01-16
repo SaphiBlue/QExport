@@ -2,7 +2,7 @@ bl_info = {
     "name": "Quantum Batch Export",
     "description": "Exports internal images with a certain prefix, into a given directory",
     "author": "Saphi",
-    "version": (0, 0, 2),
+    "version": (1, 0, 0),
     "blender": (4, 2, 0),
     "category": "Output",
     "location": "Output > Quantum Export",
