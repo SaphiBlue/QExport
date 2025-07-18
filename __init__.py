@@ -2,8 +2,8 @@ bl_info = {
     "name": "Quantum Batch Export",
     "description": "Exports internal images with a certain prefix, into a given directory",
     "author": "Saphi",
-    "version": (1, 0, 0),
-    "blender": (4, 2, 0),
+    "version": (1, 0, 1),
+    "blender": (4, 5, 0),
     "category": "Output",
     "location": "Output > Quantum Export",
     "doc_url": "https://github.com/SaphiBlue/QExport"
@@ -40,7 +40,8 @@ class QExportGlobalProps(bpy.types.PropertyGroup):
         name = "Output",
         description = "Name of output directory",
         default = "//Baked/",
-        subtype = 'DIR_PATH',)
+        subtype = 'DIR_PATH',
+        options={'PATH_SUPPORTS_BLEND_RELATIVE'},)
     prefix: bpy.props.StringProperty(
         name = "Prefix",
         description = "Prefix",
